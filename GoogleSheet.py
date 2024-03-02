@@ -38,7 +38,7 @@ class Googlesheet:
 
     
 x=Googlesheet()
-y=x.insertIntoSheet([['12/16/2023', 'Sunil Chand', '11:44:35'],['12/16/2023', 'Sushil Sharma', '11:44:35']])
+y=x.insertIntoSheet([['12/16/2023', 'Lalit Shukla', '11:44:35'],['12/16/2023', 'Sushil Sharma', '11:44:35']])
 print(y)
 #m=x.getSheetdata()
 #print(m)
