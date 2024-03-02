@@ -5,9 +5,9 @@ import os
 
 class Googlesheet:
     def __init__(self):
-        os.chdir("D:\\Programs\\GoogleSheet_Integration")
-        self.jsonPath =os.getcwd()+"\\blackhat1901.json"
-        self.scope = ['https://spreadsheets.google.com/feeds','https://www.googleapis.com/auth/drive']
+        os.chdir("D:\\Programs\\GoogleSheet_Integration")    #your drive path
+        self.jsonPath =os.getcwd()+"\\blackhat1901.json"     # path of json File that contains credentials
+        self.scope = ['https://spreadsheets.google.com/feeds','https://www.googleapis.com/auth/drive']  
         self.creds = ServiceAccountCredentials.from_json_keyfile_name(self.jsonPath, self.scope)
         client = gspread.authorize(self.creds)
         self.sheet = client.open('AttendanceData')
